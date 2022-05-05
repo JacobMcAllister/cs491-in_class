@@ -1,0 +1,28 @@
+<h1>Show Developer</h1>
+
+<ul>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @developer.last_name %>
+  </li>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @developer.first_name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @developer.email %>
+  </li>
+
+  <li>
+    <strong>Expertise:</strong>
+    <%= @developer.expertise %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.developer_path(@conn, :edit, @developer) %></span> |
+<span><%= link "Back", to: Routes.developer_path(@conn, :index) %></span>
